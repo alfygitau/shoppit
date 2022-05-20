@@ -1,0 +1,9 @@
+.App{
+    background-color: rgb(247, 247, 247);
+}
+
+a.active{
+        color: white;
+        border-radius: 10px;
+        padding: 3px;
+}
