@@ -24,6 +24,7 @@ const Slider = () => {
         <img
           src="https://images.pexels.com/photos/4109755/pexels-photo-4109755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="slider"
+          id="10"
         />
         <img
           src="https://images.pexels.com/photos/346749/pexels-photo-346749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
