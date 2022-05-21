@@ -35,7 +35,7 @@ const Slider = () => {
         <img
           src="https://images.pexels.com/photos/16170/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="slider"
-          id="10"
+          id="101"
         />
       </Carousel>
     </SliderContainer>
