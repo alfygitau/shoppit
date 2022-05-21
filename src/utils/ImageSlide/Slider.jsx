@@ -20,7 +20,7 @@ const Slider = () => {
         <img
           src="https://images.pexels.com/photos/267320/pexels-photo-267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="slider"
-          id="101"
+          id="10"
         />
         <img
           src="https://images.pexels.com/photos/4109755/pexels-photo-4109755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
