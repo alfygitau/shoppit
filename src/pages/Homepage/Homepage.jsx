@@ -62,6 +62,9 @@ const Slide = styled.div`
 `;
 const Category = styled.div`
   width: 20%;
+  @media (max-width: 768px){
+    display: none;
+  }
 `;
 const Tabs = styled.h6`
   padding: 5px;

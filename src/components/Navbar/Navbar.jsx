@@ -75,4 +75,7 @@ const Tabs = styled.div`
   flex: 4;
   align-items: center;
   justify-content: space-evenly;
+  @media (max-width: 768px){
+    display: none;
+  }
 `;
