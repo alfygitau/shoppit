@@ -234,6 +234,7 @@ const CartContent = styled.div`
 `;
 const Checkout = styled.div`
   width: 30%;
+  margin-bottom: 20px;
   @media (max-width: 768px){
     width: 100%;
   }
