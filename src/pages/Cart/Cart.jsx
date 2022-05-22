@@ -203,13 +203,14 @@ export default Cart;
 
 const Wrapper = styled.div`
   width: 85%;
-  height: 100vh;
+  height: fit-content;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   flex-direction: column;
   background-color: white;
   margin-top: 40px;
+  margin-bottom: 40px;
 `;
 const CartWrapper = styled.div`
   width: 82%;
@@ -218,15 +219,31 @@ const CartWrapper = styled.div`
   margin-left: auto;
   display: flex;
   gap: 1em;
+  @media (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+  }
 `;
 const CartContent = styled.div`
   width: 70%;
+  @media (max-width: 768px){
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 const Checkout = styled.div`
   width: 30%;
+  @media (max-width: 768px){
+    width: 100%;
+  }
 `;
 const CartSection = styled.section`
   display: flex;
+  @media (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+  }
 `;
 const ImageCont = styled.div`
   flex: 1;

@@ -63,12 +63,18 @@ const MainNav = styled.div`
   margin-left: auto;
   display: flex;
   align-items: center;
+  @media (max-width: 768px){
+    height: 200px;
+  }
 `;
 const Categories = styled.div`
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: center;
+  @media (max-width: 768px){
+    display: none;
+  }
 `;
 const Tabs = styled.div`
   display: flex;
@@ -76,6 +82,7 @@ const Tabs = styled.div`
   align-items: center;
   justify-content: space-evenly;
   @media (max-width: 768px){
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
 `;
