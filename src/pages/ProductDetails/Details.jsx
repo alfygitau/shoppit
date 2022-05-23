@@ -34,17 +34,33 @@ const Details = () => {
           <Brand>Brand: Generic</Brand>
           <Title>{product.title}</Title>
           <hr />
-          Rating
+          <span
+            style={{
+              fontWeight: "bold",
+              fontSize: "20px",
+              marginTop: "20px",
+            }}
+          >
+            Rating
+          </span>
           <Rating value={4} />
           <hr />
           <span>Highlights</span>
-          <ul style={{listStyleType: "none"}}>
+          <ul style={{ listStyleType: "none" }}>
             <li>Reliable</li>
             <li>Durable</li>
             <li>Fancy</li>
             <li>High quality product</li>
           </ul>
-          <span>Description</span>
+          <span
+            style={{
+              fontWeight: "bold",
+              fontSize: "20px",
+              marginTop: "20px",
+            }}
+          >
+            Description
+          </span>
           <Description>{product.description}</Description>
         </Highlights>
         <CartButtons>
@@ -69,7 +85,7 @@ export default Details;
 
 const MainContainer = styled.div`
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   margin-right: auto;
   margin-left: auto;
 `;
@@ -81,13 +97,19 @@ const DetailsContainer = styled.div`
   background-color: white;
   display: flex;
   margin-top: 40px;
+  @media (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
 `;
 const ProductImage = styled.div`
   display: flex;
   flex: 1;
   border: 1px solid rgb(244, 244, 244);
   padding: 5px;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 `;
 const Highlights = styled.div`
@@ -108,6 +130,7 @@ const CartButtons = styled.div`
 const Image = styled.img`
   width: 80%;
   height: 60%;
+  margin-top: 20px;
 `;
 const Brand = styled.h6`
   color: rgb(237, 102, 28);
