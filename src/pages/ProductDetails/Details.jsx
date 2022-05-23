@@ -66,7 +66,7 @@ const Details = () => {
         <CartButtons>
           <Price>USD {product.price}</Price>
           <Discount>Total Discount: 10%</Discount>
-          <ResultPrice>USD {resultPrice}</ResultPrice>
+          <ResultPrice>USD {resultPrice.toFixed(2)}</ResultPrice>
           <BuyNow />
           <AddToCart product={product} />
           <AddToWishlist />
@@ -97,7 +97,7 @@ const DetailsContainer = styled.div`
   background-color: white;
   display: flex;
   margin-top: 40px;
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     height: fit-content;
