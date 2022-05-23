@@ -64,9 +64,9 @@ const Details = () => {
           <Description>{product.description}</Description>
         </Highlights>
         <CartButtons>
-          <Price>USD {product.price}</Price>
+          <Price>Price: USD {product.price}</Price>
           <Discount>Total Discount: 10%</Discount>
-          <ResultPrice>USD {resultPrice.toFixed(2)}</ResultPrice>
+          <ResultPrice>USD: {resultPrice.toFixed(2)}</ResultPrice>
           <BuyNow />
           <AddToCart product={product} />
           <AddToWishlist />
