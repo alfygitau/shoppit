@@ -9,6 +9,7 @@ import FeaturedProducts from "./pages/FeaturedProducts/FeaturedProducts";
 import Cart from "./pages/Cart/Cart";
 import Footer from "./components/Footer/Footer";
 import Category from "./pages/categories/Category";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/featured-products" element={<FeaturedProducts/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/categories" element={<Category/>}/>
+        <Route path="*" element={<NotFound/>}/>
       </Routes>
       <Footer/>
     </div>
