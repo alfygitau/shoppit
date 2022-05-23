@@ -79,6 +79,7 @@ const FooterContainer = styled.div`
   width: 100%;
   background-color: white;
   height: 20vh;
+  margin-top: 10px;
 `;
 const SubFooter = styled.div`
   width: 80%;
