@@ -6,6 +6,7 @@ import styled from "styled-components";
 import { clearCart, removeFromCart } from "../../Redux/Actions/CartActions";
 import { ADD_TO_CART } from "../../Redux/Constants/ActionTypes";
 import CheckOut from "../../utils/CartButtons/CheckOut";
+import "./Cart.css";
 
 const Cart = () => {
   const cart = localStorage.getItem("cart")
@@ -126,7 +127,7 @@ const Cart = () => {
             ) : (
               <Button
                 style={{
-                  width: "320px",
+                  width: "250px",
                   backgroundColor: "rgb(237, 102, 28)",
                   alignSelf: "center",
                   marginTop: "30px",
@@ -188,10 +189,12 @@ const Cart = () => {
                   .toFixed(2)}
               </p>
             </Info>
-            <CheckOut />
-            <Button onClick={handleClearCart} style={{ width: "320px" }}>
-              CLEAR CART
-            </Button>
+            <ButtonContainer>
+              <CheckOut />
+              <Button onClick={handleClearCart} className="clear-button">
+                CLEAR CART
+              </Button>
+            </ButtonContainer>
           </Checkout>
         </CartWrapper>
       </Wrapper>
@@ -219,14 +222,14 @@ const CartWrapper = styled.div`
   margin-left: auto;
   display: flex;
   gap: 1em;
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
   }
 `;
 const CartContent = styled.div`
   width: 70%;
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -235,13 +238,14 @@ const CartContent = styled.div`
 const Checkout = styled.div`
   width: 30%;
   margin-bottom: 20px;
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     width: 100%;
   }
 `;
 const CartSection = styled.section`
   display: flex;
-  @media (max-width: 768px){
+  margin-bottom: 20px;
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
   }
@@ -353,4 +357,9 @@ const Empty = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+`;
+const ButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `;

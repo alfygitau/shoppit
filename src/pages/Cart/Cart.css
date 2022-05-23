@@ -1,0 +1,10 @@
+@media (max-width: 768px){
+    .clear-button{
+        width: 250px;
+    }
+}
+
+.clear-button{
+    min-width: 250px;
+    max-width: 320px;
+}

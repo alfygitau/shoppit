@@ -7,20 +7,19 @@ import {
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import "../Announcement/Response.css";
 
 const Announcement = () => {
   const linkStyles = {
-    marginRight: "10px",
-    marginLeft: "10px",
     display: "flex",
     alignItems: "center",
-    color: "black"
+    color: "black",
   };
   const contactStyles = {
-      display: "flex",
-      alignItems: "center",
-      color: "black"
-  }
+    display: "flex",
+    alignItems: "center",
+    color: "black",
+  };
 
   return (
     <Container>
@@ -37,20 +36,17 @@ const Announcement = () => {
           </Email>
         </Contact>
         <Authentication>
-          <NavLink style={linkStyles} to="/language">
+          <NavLink style={linkStyles} className="nav-link" to="/language">
             English
           </NavLink>
-          <NavLink style={linkStyles} to="/currency">
-            $ US Dollar
+          <NavLink style={linkStyles} className="nav-link" to="/currency">
+            USD
           </NavLink>
-          <NavLink to="/register" style={linkStyles}>
-            <PersonAddAlt /> &nbsp;
-            Register
-          </NavLink>{" "}
-          |
-          <NavLink to="/login" style={linkStyles}>
-            <Login /> &nbsp;
-            Sign in
+          <NavLink to="/register" style={linkStyles} className="nav-link">
+            <PersonAddAlt /> &nbsp;<span>Register</span>
+          </NavLink>{" "}          |
+          <NavLink to="/login" style={linkStyles} className="nav-link">
+            <Login /> &nbsp;<span>Login</span>
           </NavLink>
         </Authentication>
       </Wrapper>
@@ -74,7 +70,7 @@ const Wrapper = styled.div`
   margin-right: auto;
   display: flex;
   align-items: center;
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     display: flex;
     justify-content: space-evenly;
   }
@@ -84,7 +80,7 @@ const Contact = styled.div`
   flex: 1;
   align-items: center;
   justify-content: flex-start;
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     display: none;
   }
 `;
@@ -93,6 +89,9 @@ const Authentication = styled.div`
   flex: 1;
   align-items: center;
   justify-content: flex-end;
+  @media (max-width: 768px) {
+    display: flex;
+  }
 `;
 const Tel = styled.h5`
   color: black;

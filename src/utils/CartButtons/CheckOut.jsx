@@ -8,11 +8,14 @@ const CheckOut = () => {
 export default CheckOut;
 
 const Button = styled.button`
-  width: 320px;
+  width: 250px;
   color: white;
   background-color: rgb(237, 102, 28);
   padding: 7px;
   margin-bottom: 20px;
   margin-top: 10px;
   border-radius: 5px;
+  @media (max-width: 768px){
+    width: 250px;
+  }
 `;
