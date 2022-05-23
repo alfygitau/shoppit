@@ -20,4 +20,8 @@ const Button = styled.button`
   border: 1px solid black;
   padding: 7px;
   margin-bottom: 20px;
+  &:hover {
+    background-color: rgb(237, 102, 28);
+    color: white;
+  }
 `;

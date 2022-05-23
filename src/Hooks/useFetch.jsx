@@ -15,6 +15,9 @@ export default function useFetch(url) {
       })
       .catch((error) => {
         setError(error.message);
+      })
+      .finally(() => {
+        setLoading(false);
       });
   }, [url]);
 

@@ -33,7 +33,7 @@ const Details = () => {
         <Highlights>
           <Brand>Brand: Generic</Brand>
           <Title>{product.title}</Title>
-          <hr />
+          {/* <hr /> */}
           <span
             style={{
               fontWeight: "bold",
@@ -135,10 +135,11 @@ const Image = styled.img`
 const Brand = styled.h6`
   color: rgb(237, 102, 28);
 `;
-const Title = styled.h4`
+const Title = styled.span`
   display: block;
   background-color: rgb(247, 247, 247);
   padding: 10px;
+  font-weight: bold;
 `;
 const Description = styled.p``;
 
